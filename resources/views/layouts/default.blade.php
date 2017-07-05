@@ -43,6 +43,7 @@
             <h1 class="title is-2">{{__('Community Center Modifier')}}</h1>
           </a>          
           <p>{{__('Create your Own Community Center Arc!')}}</p>
+          <p><strong>{{__('For')}} Stardew Valley 1.2</strong></p>
         </div>
         <div class="tile is-child"></div>
       </div>
