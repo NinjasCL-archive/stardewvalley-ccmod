@@ -11,6 +11,7 @@ create your own requirements!.
 It's a simple script created in Laravel 5. Does not use databases. Run Using Mamp/Wamp/Xampp or Laravel's Valet.
 
 * PHP 7
+* Composer [https://getcomposer.org/](https://getcomposer.org/)
 * Chrome (recommended, other browsers may not work well)
 * Stardew Valley 1.2
 
@@ -19,6 +20,12 @@ It's a simple script created in Laravel 5. Does not use databases. Run Using Mam
 * Change Prizes and Quantities
 * Change Required Items, Quantity and Quality
 * Change Bundle Names
+
+## How to Install
+
+1. Run `composer install`
+2. Start Webserver
+3. Open Browser 
 
 ## How to Use
 
