@@ -90,6 +90,7 @@
           var item = helpers.item(option);
           
           bundle.prize.item = item;
+          bundle.prize.type = item.prizeType;
           helpers.update.bundle(bundle, $(this));
         });
 
@@ -161,7 +162,7 @@
         });
 
         // only allow numbers
-        $('.numeric').on('propertychange change click keyup input paste blur', function(e)
+        $('.numeric').on('', function(e)
         {
           
           $(e.target).val($(e.target).val().replace(/[^\d]/g, ''));
@@ -174,6 +175,30 @@
           {
               $(e.target).val(parseInt($(e.target).val()));
           }
+        });
+
+        // force max and mins
+        // https://stackoverflow.com/questions/36349260/restrict-input-type-number-to-its-min-or-max-if-it-is-out-of-range
+        $("input[type=number]").on('propertychange change click keyup input paste blur', function(e)
+        {
+          var max = parseInt($(this).attr('max'));
+          var min = parseInt($(this).attr('min'));
+          var val = parseInt($(this).val());
+
+          if (val > max)
+          {
+              $(this).val(max);
+          }
+          else if (val < min)
+          {
+              $(this).val(min);
+          }
+
+          if(!val || $(this).val() === '')
+          {
+            $(this).val(min);
+          }
+          
         });
     });
   </script>
@@ -266,12 +291,14 @@
                           <p class="control">
                             <input class="input numeric bundle-prize-input-quantity bundle-prize-input-quantity-{{$bundle->id}}"
                                   id="bundle-prize-input-quantity-{{$bundle->id}}-{{$loop->index}}"
-                                  type="text"
+                                  type="number"
                                   placeholder="{{__('Quantity')}}"
                                   data-bundle-id="{{$bundle->id}}"
                                   data-bundle-index="{{$loop->index}}"
                                   data-index="{{$loop->index}}"
                                   value="{{$bundle->prize->quantity}}"
+                                  max="99"
+                                  min="1"
                                   required>
                           </p>
                 </div>
@@ -311,7 +338,7 @@
                                       data-item-uid ="{{$item->uid}}"
                                       data-bundle-id ="{{$bundle->id}}"
                                       data-index="{{$loop->parent->index}}"
-                                      data-bundle-index="{{$loop->parent->index}}"
+                                      data-bundle-index="{{$loop->parent->parent->index}}"
                                       data-index-loop="{{$loop->index}}"
 
                                       @if($requirement->item->uid === $item->uid)
@@ -332,12 +359,14 @@
                           <p class="control">
                             <input class="input numeric bundle-requirement-input-quantity bundle-requirement-input-quantity-{{$bundle->id}}"
                                   id="bundle-requirement-input-quantity-{{$bundle->id}}-{{$loop->index}}"
-                                  type="text"
+                                  type="number"
                                   placeholder="{{__('Quantity')}}"
                                   value="{{$requirement->quantity}}"
                                   data-bundle-id="{{$bundle->id}}"
                                   data-bundle-index="{{$loop->parent->index}}"
                                   data-index="{{$loop->index}}"
+                                  max="99"
+                                  min="1"
                                   required>
                           </p>
                         </div>
@@ -355,7 +384,7 @@
                                       data-quality-name="{{$quality->name}}"
                                       data-quality-value="{{$quality->value}}"
                                       data-bundle-id="{{$bundle->id}}"
-                                      data-bundle-index="{{$loop->parent->index}}"
+                                      data-bundle-index="{{$loop->parent->parent->index}}"
                                       data-index="{{$loop->parent->index}}"
                                       data-index-loop="{{$loop->index}}"
                                       value="{{$quality->value}}"
