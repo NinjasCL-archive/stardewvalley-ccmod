@@ -4,6 +4,9 @@ create your own requirements!.
 
 ![](https://user-images.githubusercontent.com/292738/27853965-e2071552-6132-11e7-99c6-3ef0eec9946d.png)
 
+![](https://user-images.githubusercontent.com/292738/27927274-3dea9674-6259-11e7-9ada-4e5656c2968c.png)
+
+
 **Compatible with Stardew Valley 1.2**
 
 ## Requirements
