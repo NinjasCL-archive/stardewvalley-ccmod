@@ -27,7 +27,7 @@ It's a simple script created in Laravel 5. Does not use databases. Run Using Mam
 ## How to Install
 
 1. Run `composer install`
-2. Start Webserver
+2. Start Webserver `php artisan serve`
 3. Open Browser 
 
 ## How to Use
