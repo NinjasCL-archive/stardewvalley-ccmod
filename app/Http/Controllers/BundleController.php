@@ -96,7 +96,13 @@ class BundleController extends Controller
         'fodder' => $bundles[29]
       ];
 
-      $yaml = view('bundle.yaml', $params)->render();
+      $view = 'bundle.yaml';
+      if($lang === Bundle::kLangEnglish)
+      {
+        $view .= '-eng';
+      }
+
+      $yaml = view($view, $params)->render();
 
       $filepath = storage_path() . DIRECTORY_SEPARATOR . md5(microtime()) . $filename;
       $file = fopen($filepath, 'w');
