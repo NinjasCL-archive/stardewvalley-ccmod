@@ -11,6 +11,7 @@
 
         var bundles = {!! $bundles_json !!};
         var items = {!! $items_json !!};
+        var objects = {!! $objects_json !!};
 
         var helpers = {
           id : function(object) {
@@ -36,7 +37,7 @@
             var item = items[id];
             return item;
           },
-
+          
           update : {
             bundle: function(bundle, object) {
               var id = helpers.id(object);
@@ -61,6 +62,11 @@
             get : function(bundle, object) {
               var id = helpers.requirement.id(object);
               return bundle.requirements[id];
+            },
+            item : function(object) {
+              var id = object.attr('data-index-loop');
+              var item = objects[id];
+              return item;
             }
           },
           quality : {
@@ -105,7 +111,7 @@
         {
           var bundle = helpers.selected.bundle($(this));
           var option = helpers.selected.option($(this));
-          var item = helpers.item(option);
+          var item = helpers.requirement.item(option);
           
           var requirement = {};
           requirement.id = helpers.requirement.id(option);
@@ -329,8 +335,8 @@
                           <span>
                             <select class="chosen-select bundle-select bundle-requirement-select-item bundle-requirement-select-item-{{$bundle->id}}"
                                     id="bundle-requirement-select-item-{{$bundle->id}}-{{$loop->index}}">
-                              @foreach($items as $item)
-                                <option class="bundle-requirement-select-item-option bundle-requirement-select-item-option-{{$bundle->id}} {{$item->uid}}" 
+                              @foreach($objects as $item)
+                                <option class="object bundle-requirement-select-item-option bundle-requirement-select-item-option-{{$bundle->id}} {{$item->uid}}" 
                                       id="bundle-requirement-select-item-option-{{$bundle->id}}-{{$loop->parent->index}}-{{$loop->index}}-{{$item->uid}}"
                                       data-item-id="{{$item->id}}" 
                                       data-item-category="{{$item->category}}" 

@@ -179,6 +179,22 @@ class Item
       return self::$objects;
     }
 
+    // Only allowed objects in the bundle requirements
+    public static function allowedObjects()
+    {
+      $objects = self::objects();
+      $allowed = [];
+      foreach($objects as $object)
+      {
+        if($object->prizeType != self::kTypeRing)
+        {
+          $allowed[] = $object;
+        }
+      }
+
+      return $allowed;
+    }
+
     public static function furniture()
     {
       if (is_null(self::$furniture) || count(self::$furniture) <= 0) 

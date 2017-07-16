@@ -25,6 +25,7 @@ class BundleController extends Controller
       $language = $request->input('lang');
       $bundles = Bundle::getByLang($language);
       $items = Item::all();
+      $objects = Item::allowedObjects();
       $qualities = Quality::all();
 
       // Animal Bundle have these weird ids after position 5
@@ -39,6 +40,8 @@ class BundleController extends Controller
         'lang' => $language,
         'items' => $items,
         'items_json' => json_encode($items),
+        'objects' => $objects,
+        'objects_json' => json_encode($objects),
         'qualities' => $qualities
         ]);
     }
