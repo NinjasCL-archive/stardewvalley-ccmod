@@ -13,7 +13,7 @@ create your own requirements!.
 
 It's a simple script created in Laravel 5. Does not use databases. Run Using Mamp/Wamp/Xampp or Laravel's Valet.
 
-* PHP 7
+* PHP >= 7.1
 * Composer [https://getcomposer.org/](https://getcomposer.org/)
 * Chrome (recommended, other browsers may not work well)
 * Stardew Valley 1.2
@@ -29,6 +29,9 @@ It's a simple script created in Laravel 5. Does not use databases. Run Using Mam
 1. Run `composer install`
 2. Start Webserver `php artisan serve`
 3. Open Browser 
+
+## Quick Use
+Go to [http://ccmod.ninjas.cl/public/](http://ccmod.ninjas.cl/public/)
 
 ## How to Use
 
