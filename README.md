@@ -38,7 +38,7 @@ Go to [http://ccmod.ninjas.cl/public/](http://ccmod.ninjas.cl/public/)
 1. Select your Bundle's Language
 2. Change your desired settings
 3. Download the Yaml file
-4. Compile to `XNB` using [https://github.com/draivin/XNBNode](https://github.com/draivin/XNBNode)
+4. Compile to `XNB` using [https://github.com/draivin/XNBNode](https://github.com/draivin/XNBNode). Usage guide [http://community.playstarbound.com/threads/beginners-guide-to-xnb-node-and-graphics-editing.110976/](http://community.playstarbound.com/threads/beginners-guide-to-xnb-node-and-graphics-editing.110976/)
 5. Copy `Bundles.xnb` (or `Bundles.es-ES`, depending on your selected language) replacing the file in `Data/Bundles.xnb` (depens on the language) inside the StarDew Valley files directory (Backup your files).
 6. That's it!.
 
