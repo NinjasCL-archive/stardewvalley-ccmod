@@ -9,6 +9,8 @@ create your own requirements!.
 
 **Compatible with Stardew Valley 1.4**
 
+Forum Post: https://community.playstarbound.com/threads/community-center-modifier.135100/
+
 ## Requirements
 
 It's a simple script created in Laravel 5. Does not use databases. Run Using Mamp/Wamp/Xampp, Laravel's Valet or PHP's build in server.
