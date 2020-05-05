@@ -164,6 +164,12 @@
           var form = $('#form');
           $('#param-bundles').val(JSON.stringify(bundles));
           $('#param-lang').val('{{$lang}}');
+		  
+		  $('#param-xnb').val('');
+		  if (e.target.attributes['data-xnb']) {			  
+			$('#param-xnb').val('true');
+		  }
+		  
           form.submit();
         });
 
@@ -185,7 +191,8 @@
 
         // force max and mins
         // https://stackoverflow.com/questions/36349260/restrict-input-type-number-to-its-min-or-max-if-it-is-out-of-range
-        $("input[type=number]").on('propertychange change click keyup input paste blur', function(e)
+		
+        $("input[type=number]").on('propertychange click change keyup input paste blur', function(e)
         {
           var max = parseInt($(this).attr('max'));
           var min = parseInt($(this).attr('min'));
@@ -204,6 +211,8 @@
           {
             $(this).val(min);
           }
+		  
+		  $(this).val(parseInt($(this).val()));
           
         });
     });
@@ -227,6 +236,7 @@
     <div class="tile is-parent">
       <div class="tile is-child">
         <button class="submit button is-primary is-medium">{{__('Create Yaml')}}</button>
+		<button class="submit button is-info is-medium xnb" data-xnb="true">{{__('Create XNB')}}</button>
       </div>
     </div>
   </div>
@@ -304,7 +314,7 @@
                                   data-index="{{$loop->index}}"
                                   value="{{$bundle->prize->quantity}}"
                                   max="99"
-                                  min="1"
+                                  min="0"
                                   required>
                           </p>
                 </div>
@@ -372,7 +382,7 @@
                                   data-bundle-index="{{$loop->parent->index}}"
                                   data-index="{{$loop->index}}"
                                   max="99"
-                                  min="1"
+                                  min="0"
                                   required>
                           </p>
                         </div>
@@ -442,6 +452,7 @@
     <div class="tile is-parent">
       <div class="tile is-child">
         <button class="submit button is-primary is-medium">{{__('Create Yaml')}}</button>
+		<button class="submit button is-info is-medium xnb" data-xnb="true">{{__('Create XNB')}}</button>
       </div>
     </div>
   </div>
@@ -449,6 +460,7 @@
     {{ csrf_field() }}
     <input id="param-bundles" type="hidden" value="" name="bundles">
     <input id="param-lang" type="hidden" value="" name="lang">
+	<input id="param-xnb" type="hidden" value="" name="xnb">
   </form>
 </div> <!-- /container -->
 @endsection

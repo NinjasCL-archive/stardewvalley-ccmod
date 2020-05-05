@@ -1,0 +1,98 @@
+
+xnbData: 
+    target: "w"
+    compressed: true
+    hiDef: true
+    readerData: 
+        - 
+            type: "Microsoft.Xna.Framework.Content.DictionaryReader`2[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.Int32Reader"
+            version: 0
+
+        - 
+            type: "Microsoft.Xna.Framework.Content.StringReader"
+            version: 0
+
+
+    numSharedResources: 0
+
+content:  #!Dictionary<Int32,String>
+    0: "Cowboy Hat/The leather is old and cracked, but surprisingly supple. It smells musty./false/true" #!String
+    1: "Bowler Hat/Made from smooth felt./false/true" #!String
+    2: "Top Hat/A gentleman's classic./false/true" #!String
+    3: "Sombrero/A festively decorated hat made from woven straw./false/true" #!String
+    4: "Straw Hat/Light and cool, it's a farmer's delight./false/true" #!String
+    5: "Official Cap/Looks like it belonged to a postman or policeman. Either way, it's still very soft and smells okay./false/true" #!String
+    6: "Blue Bonnet/Harken back to simpler times with this prairie bonnet./false/true" #!String
+    7: "Plum Chapeau/Looks alright./false/true" #!String
+    8: "Skeleton Mask/The red eyes are glowing mysteriously./true/true" #!String
+    9: "Goblin Mask/Freak out the neighborhood with this creepy mask. Rubber ear joints for effect./true/true" #!String
+    10: "Chicken Mask/You'll be sure to get them grinning with this one./true/true" #!String
+    11: "Earmuffs/Keep your ears toasty. Lined with artisanal velvet from Castle Village./true/false" #!String
+    12: "Delicate Bow/Little pink jewels glisten as you examine it./true/false" #!String
+    13: "Tropiclip/It's shaped like a little palm tree./true/false" #!String
+    14: "Butterfly Bow/This one is very soft./true/false" #!String
+    15: "Hunter's Cap/The wool lining should stay warm deep into the forest./false/true" #!String
+    16: "Trucker Hat/Mesh in the back to keep your head cool./false/true" #!String
+    17: "Sailor's Cap/It's fresh and starchy./false/true" #!String
+    18: "Good Ol' Cap/A floppy old topper with a creased bill. Looks like it's been through a lot./false/true" #!String
+    19: "Fedora/A city-slicker's standard./false/true" #!String
+    20: "Cool Cap/It looks really faded, but it used to be a vibrant blue./false/true" #!String
+    21: "Lucky Bow/The middle is made of solid gold./true/false" #!String
+    22: "Polka Bow/This one's sure to be turn heads./true/false" #!String
+    23: "Gnome's Cap/This gnome had a very large head./false/true" #!String
+    24: "Eye Patch/You can't tell if it's real or just from a costume shop./true/true" #!String
+    25: "Santa Hat/Celebrate the magical season./false/true" #!String
+    26: "Tiara/This one has a big amethyst encircled by gold./true/true" #!String
+    27: "Hard Hat/Keep your dome in one piece./false/true" #!String
+    28: "Sou'wester/The shape helps to keep sailors dry during storms./false/true" #!String
+    29: "Daisy/A fresh spring daisy to put in your hair./true/false" #!String
+    30: "Watermelon Band/The color scheme was inspired by the beloved summer melon./true/false" #!String
+    31: "Mouse Ears/Made from synthetic fibers./true/true" #!String
+    32: "Cat Ears/Whiskers included./true/true" #!String
+    33: "Cowgal Hat/The band is studded with fake diamonds./false/true" #!String
+    34: "Cowpoke Hat/For dairy experts./false/true" #!String
+    35: "Archer's Cap/Fashionable whether you're an archer or not./false/true" #!String
+    36: "Panda Hat/A lovely panda hat./false/true" #!String
+    37: "Blue Cowboy Hat/A denim cowboy hat in cool blue./false/true" #!String
+    38: "Red Cowboy Hat/An eye-catching cowboy hat in red suede./false/true" #!String
+    39: "Cone Hat/A curiosity from a distant land./false/true" #!String
+    40: "Living Hat/It absorbs moisture from your scalp. No watering needed!/false/true" #!String
+    41: "Emily's Magic Hat/Made with love by Emily. It's 100% organic!/false/true" #!String
+    42: "Mushroom Cap/It smells earthy./false/true" #!String
+    43: "Dinosaur Hat/A hat fashioned to look like a small dinosaur./false/true" #!String
+    44: "Totem Mask/Don't worry, it won't warp your face.../true/true" #!String
+    45: "Logo Cap/A red cap with a logo on the front./false/true" #!String
+    46: "Wearable Dwarf Helm/A slightly larger, human sized version of the helmets worn by dwarves./hide/true" #!String
+    47: "Fashion Hat/A fashionable hat with a feather in the brim./false/true" #!String
+    48: "Pumpkin Mask/This must have been a pretty big pumpkin once.../hide/true" #!String
+    49: "Hair Bone/A prehistoric version of the hair bow./true/false" #!String
+    50: "Knight's Helmet/It looks just like the real thing!/hide/true" #!String
+    51: "Squire's Helmet/The face is exposed to increase air flow./hide/true" #!String
+    52: "Spotted Headscarf/A red polka-dot scarf tied around the head./hide/true" #!String
+    53: "Beanie/A warm hat with a pretty tight fit./hide/true" #!String
+    54: "Floppy Beanie/A warm hat with a looser fit./hide/true" #!String
+    55: "Fishing Hat/The wide brim keeps you shaded when you're fishing on the riverbank./false/true" #!String
+    56: "Blobfish Mask/Just as spongy as the real thing!/true/true" #!String
+    57: "Party Hat/A goofy red hat that makes any celebration more fun./false/true" #!String
+    58: "Party Hat/A goofy blue hat that makes any celebration more fun./false/true" #!String
+    59: "Party Hat/A goofy green hat that makes any celebration more fun./false/true" #!String
+    60: "Arcane Hat/The type of cowboy hat worn by a wizard./false/true" #!String
+    61: "Chef Hat/The traditional hat worn by a head chef./hide/true" #!String
+    62: "Pirate Hat/A captain's hat with a horrible skull on the front./false/true" #!String
+    63: "Flat Topped Hat/An old style of hat once considered very fashionable./false/true" #!String
+    64: "Elegant Turban/A fine black silk turban with gold trim./false/true" #!String
+    65: "White Turban/A fine white silk turban with blue trim./false/true" #!String
+    66: "Garbage Hat/It's a garbage can lid 'upcycled' into a hat.../false/true" #!String
+    67: "Golden Mask/A faithful recreation of the Calico Desert relic!/true/true" #!String
+    68: "Propeller Hat/A goofy hat with a propeller on top./false/true" #!String
+    69: "Bridal Veil/The traditional headwear for a bride./false/true" #!String
+    70: "Witch Hat/A pointy hat popular with witches./false/true" #!String
+    71: "Copper Pan/You place the copper pan on your head.../false/true" #!String
+    72: "Green Turban/A green silk turban with a gold ornament on the front./false/true" #!String
+    73: "Magic Cowboy Hat/It's shimmering with prismatic energy/false/true/Prismatic" #!String
+    74: "Magic Turban/It's shimmering with prismatic energy/false/true/Prismatic" #!String
+

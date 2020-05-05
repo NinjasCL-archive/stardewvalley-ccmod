@@ -30,17 +30,19 @@ content:  #!Dictionary<Int32,String>
     24: "Parsnip/35/10/Basic -75/Parsnip/A spring tuber closely related to the carrot. It has an earthy taste and is full of nutrients." #!String
     30: "Lumber/2/10/Basic/Lumber/A versatile resource used for building and fuel." #!String
     60: "Emerald/250/-300/Minerals -2/Emerald/A precious stone with a brilliant green color." #!String
-    62: "Aquamarine/180/-300/Minerals -2/Aquamarine/A shimmery blue-green gem ." #!String
+    62: "Aquamarine/180/-300/Minerals -2/Aquamarine/A shimmery blue-green gem." #!String
     64: "Ruby/250/-300/Minerals -2/Ruby/A precious stone that is sought after for its rich color and beautiful luster." #!String
     66: "Amethyst/100/-300/Minerals -2/Amethyst/A purple variant of quartz." #!String
     68: "Topaz/80/-300/Minerals -2/Topaz/Fairly common but still prized for its beauty." #!String
     70: "Jade/200/-300/Minerals -2/Jade/A pale green ornamental stone." #!String
+    71: "Trimmed Lucky Purple Shorts/0/-300/Quest/Trimmed Lucky Purple Shorts/Purple silk shorts trimmed in luxurious gold..." #!String
     72: "Diamond/750/-300/Minerals -2/Diamond/A rare and valuable gem." #!String
     74: "Prismatic Shard/2000/-300/Minerals -2/Prismatic Shard/A very rare and powerful substance with unknown origins." #!String
     75: "Stone/50/-300/Basic/Stone/..." #!String
     76: "Stone/50/-300/Basic/Stone/..." #!String
     77: "Stone/50/-300/Basic/Stone/..." #!String
     78: "Cave Carrot/25/12/Basic -81/Cave Carrot/A starchy snack found in caves. It helps miners work longer." #!String
+    79: "Secret Note/1/-300/asdf/Secret Note/It's old and crumpled, but if you look closely you can make out the details.../Town .0001/Note" #!String
     80: "Quartz/25/-300/Minerals -2/Quartz/A clear crystal commonly found in caves and mines." #!String
     82: "Fire Quartz/100/-300/Minerals -2/Fire Quartz/A glowing red crystal commonly found near hot lava." #!String
     84: "Frozen Tear/75/-300/Minerals -2/Frozen Tear/A crystal fabled to be the frozen tears of a yeti." #!String
@@ -133,6 +135,7 @@ content:  #!Dictionary<Int32,String>
     186: "Large Milk/190/20/Basic -6/Large Milk/A large jug of cow's milk./drink/0 0 0 0 0 0 0 0 0 0 0/0" #!String
     188: "Green Bean/40/10/Basic -75/Green Bean/A juicy little bean with a cool, crisp snap." #!String
     190: "Cauliflower/175/30/Basic -75/Cauliflower/Valuable, but slow-growing. Despite its pale color, the florets are packed with nutrients." #!String
+    191: "Ornate Necklace/0/-300/Quest/Ornate Necklace/A fancy necklace found in the water outside of the bath house. It's still wet..." #!String
     192: "Potato/80/10/Basic -75/Potato/A widely cultivated tuber." #!String
     194: "Fried Egg/35/20/Cooking -7/Fried Egg/Sunny-side up./food/0 0 0 0 0 0 0 0 0 0 0/0" #!String
     195: "Omelet/125/40/Cooking -7/Omelet/It's super fluffy./food/0 0 0 0 0 0 0 0 0 0 0/0" #!String
@@ -147,7 +150,7 @@ content:  #!Dictionary<Int32,String>
     204: "Lucky Lunch/250/40/Cooking -7/Lucky Lunch/A special little meal./food/0 0 0 0 3 0 0 0 0 0 0/960" #!String
     205: "Fried Mushroom/200/54/Cooking -7/Fried Mushroom/Earthy and aromatic./food/0 0 0 0 0 0 0 0 0 0 0 2/600" #!String
     206: "Pizza/300/60/Cooking -7/Pizza/It's popular for all the right reasons./food/0 0 0 0 0 0 0 0 0 0 0/0" #!String
-    207: "Bean Hotpot/100/50/Cooking -7/Bean Hotpot/It sure is healthy./food/0 0 0 0 0 0 2 0 0 0 0/600" #!String
+    207: "Bean Hotpot/100/50/Cooking -7/Bean Hotpot/It sure is healthy./food/0 0 0 0 0 0 0 30 32 0 0/600" #!String
     208: "Glazed Yams/200/80/Cooking -7/Glazed Yams/Sweet and satisfying... The sugar gives it a hint of caramel./food/0 0 0 0 0 0 0 0 0 0 0/0" #!String
     209: "Carp Surprise/150/36/Cooking -7/Carp Surprise/It's bland and oily./food/0 0 0 0 0 0 0 0 0 0 0/0" #!String
     210: "Hashbrowns/120/36/Cooking -7/Hashbrowns/Crispy and golden-brown!/food/1 0 0 0 0 0 0 0 0 0 0/480" #!String
@@ -189,22 +192,33 @@ content:  #!Dictionary<Int32,String>
     247: "Oil/100/5/Basic/Oil/All purpose cooking oil./drink/0 0 0 0 0 0 0 0 0 0 0/0" #!String
     248: "Garlic/60/8/Basic -75/Garlic/Adds a wonderful zestiness to dishes. High quality garlic can be pretty spicy." #!String
     250: "Kale/110/20/Basic -75/Kale/The waxy leaves are great in soups and stir frys." #!String
+    251: "Tea Sapling/500/-300/Basic -74/Tea Sapling/Takes 20 days to mature. Produces tea leaves during the final week of each season, except winter. No watering necessary!" #!String
     252: "Rhubarb/220/-300/Basic -79/Rhubarb/The stalks are extremely tart, but make a great dessert when sweetened." #!String
+    253: "Triple Shot Espresso/450/3/Cooking -7/Triple Shot Espresso/It's more potent than regular coffee!/drink/0 0 0 0 0 0 0 0 0 1 0/360" #!String
     254: "Melon/250/45/Basic -79/Melon/A cool, sweet summer treat." #!String
     256: "Tomato/60/8/Basic -75/Tomato/Rich and slightly tangy, the Tomato has a wide variety of culinary uses." #!String
     257: "Morel/150/8/Basic -81/Morel/Sought after for its unique nutty flavor." #!String
     258: "Blueberry/50/10/Basic -79/Blueberry/A popular berry reported to have many health benefits. The blue skin has the highest nutrient concentration." #!String
     259: "Fiddlehead Fern/90/10/Basic -75/Fiddlehead Fern/The young shoots are an edible specialty." #!String
     260: "Hot Pepper/40/5/Basic -79/Hot Pepper/Fiery hot with a hint of sweetness." #!String
+    261: "Warp Totem: Desert/20/-300/Crafting/Warp Totem: Desert/Warp directly to Calico Desert. Consumed on use." #!String
     262: "Wheat/25/-300/Basic -75/Wheat/One of the most widely cultivated grains. Makes a great flour for breads and cakes." #!String
     264: "Radish/90/18/Basic -75/Radish/A crisp and refreshing root vegetable with hints of pepper when eaten raw." #!String
+    265: "Seafoam Pudding/300/70/Cooking -7/Seafoam Pudding/This briny pudding will really get you into the maritime mindset!/food/0 4 0 0 0 0 0 0 0 0 0/300" #!String
     266: "Red Cabbage/260/30/Basic -75/Red Cabbage/Often used in salads and coleslaws. The color can range from purple to blue to green-yellow depending on soil conditions." #!String
+    267: "Flounder/100/15/Fish -4/Flounder/It lives on the bottom, so both eyes are on top of its head./Day^Spring Summer" #!String
     268: "Starfruit/750/50/Basic -79/Starfruit/An extremely juicy fruit that grows in hot, humid weather. Slightly sweet with a sour undertone." #!String
+    269: "Midnight Carp/150/20/Fish -4/Midnight Carp/This shy fish only feels comfortable at night./Night^Fall Winter" #!String
     270: "Corn/50/10/Basic -75/Corn/One of the most popular grains. The sweet, fresh cobs are a summer favorite." #!String
+    271: "Unmilled Rice/30/1/Basic -75/Unmilled Rice/Rice in its rawest form. Run this through a mill to increase the value." #!String
     272: "Eggplant/60/8/Basic -75/Eggplant/A rich and wholesome relative of the tomato. Delicious fried or stewed." #!String
+    273: "Rice Shoot/20/-300/Seeds -74/Rice Shoot/Plant these in the spring. Takes 8 days to mature. Grows faster if planted near a body of water. Harvest with the scythe." #!String
     274: "Artichoke/160/12/Basic -75/Artichoke/The bud of a thistle plant. The spiny outer leaves conceal a fleshy, filling interior." #!String
+    275: "Artifact Trove/0/-300/Basic/Artifact Trove/A blacksmith can open this for you. These troves often contain ancient relics and curiosities./100 101 103 104 105 106 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 166 373 797" #!String
     276: "Pumpkin/320/-300/Basic -75/Pumpkin/A fall favorite, grown for its crunchy seeds and delicately flavored flesh. As a bonus, the hollow shell can be carved into a festive decoration." #!String
+    277: "Wilted Bouquet/100/-300/Basic/Wilted Bouquet/A gift that shows you want to stop dating someone." #!String
     278: "Bok Choy/80/10/Basic -75/Bok Choy/The leafy greens and fibrous stalks are healthy and delicious." #!String
+    279: "Magic Rock Candy/5000/200/Cooking -7/Magic Rock Candy/A rare and powerful candy infused with the essence of the prismatic shard./food/0 0 2 0 5 0 0 0 0 1 5 5/720" #!String
     280: "Yam/160/18/Basic -75/Yam/A starchy tuber with a lot of culinary versatility." #!String
     281: "Chanterelle/160/30/Basic -81/Chanterelle/A tasty mushroom with a fruity smell and slightly peppery flavor." #!String
     282: "Cranberries/75/15/Basic -79/Cranberries/These tart red berries are a traditional winter food." #!String
@@ -214,6 +228,7 @@ content:  #!Dictionary<Int32,String>
     287: "Bomb/50/-300/Crafting -8/Bomb/Generates an explosion. Watch out!" #!String
     288: "Mega Bomb/50/-300/Crafting -8/Mega Bomb/Generates a powerful explosion. Use with extreme caution." #!String
     290: "Stone/50/-300/Basic/Stone/..." #!String
+    293: "Brick Floor/1/-300/Crafting -24/Brick Floor/Place on the ground to create paths or to decorate your floors." #!String
     294: "Twig/1/-300/Crafting/Twig/..." #!String
     295: "Twig/1/-300/Crafting/Twig/..." #!String
     296: "Salmonberry/5/10/Basic -79/Salmonberry/A spring-time berry with the flavor of the forest." #!String
@@ -313,9 +328,9 @@ content:  #!Dictionary<Int32,String>
     421: "Sunflower/80/18/Basic -80/Sunflower/A common misconception is that the flower turns so it's always facing the sun." #!String
     422: "Purple Mushroom/250/50/Basic -81/Purple Mushroom/A rare mushroom found deep in caves." #!String
     423: "Rice/100/5/Basic/Rice/A basic grain often served under vegetables." #!String
-    424: "Cheese/200/50/Basic -26/Cheese/It's your basic cheese." #!String
+    424: "Cheese/230/50/Basic -26/Cheese/It's your basic cheese." #!String
     425: "Fairy Seeds/100/-300/Seeds -74/Fairy Seeds/Plant in fall. Takes 12 days to produce a mysterious flower. Assorted Colors." #!String
-    426: "Goat Cheese/375/50/Basic -26/Goat Cheese/Soft cheese made from goat's milk." #!String
+    426: "Goat Cheese/400/50/Basic -26/Goat Cheese/Soft cheese made from goat's milk." #!String
     427: "Tulip Bulb/10/-300/Seeds -74/Tulip Bulb/Plant in spring. Takes 6 days to produce a colorful flower. Assorted colors." #!String
     428: "Cloth/470/-300/Basic -26/Cloth/A bolt of fine wool cloth." #!String
     429: "Jazz Seeds/15/-300/Seeds -74/Jazz Seeds/Plant in spring. Takes 7 days to produce a blue puffball flower." #!String
@@ -332,7 +347,9 @@ content:  #!Dictionary<Int32,String>
     441: "Explosive Ammo/20/-300/Basic/Explosive Ammo/Fire this with the slingshot." #!String
     442: "Duck Egg/95/15/Basic -5/Duck Egg/It's still warm." #!String
     444: "Duck Feather/125/-300/Basic -18/Duck Feather/It's so colorful." #!String
+    445: "Caviar/500/70/Basic -26/Caviar/The cured roe of a sturgeon fish. Considered to be a luxurious delicacy!" #!String
     446: "Rabbit's Foot/565/-300/Basic -18/Rabbit's Foot/Some say it's lucky." #!String
+    447: "Aged Roe/100/40/Basic -26/Aged Roe/Fish eggs aged in salt to bring out the flavor." #!String
     449: "Stone Base/0/-300/asdf/Stone Base/A simple block of stone." #!String
     450: "Stone/0/-300/asdf/Stone/Stone." #!String
     452: "Weeds/0/-300/asdf/Weeds/A cluster of dry old bushes." #!String
@@ -350,7 +367,7 @@ content:  #!Dictionary<Int32,String>
     465: "Speed-Gro/20/-300/Basic -19/Speed-Gro/Stimulates leaf production. Guaranteed to increase growth rate by at least 10%. Mix into tilled soil." #!String
     466: "Deluxe Speed-Gro/40/-300/Basic -19/Deluxe Speed-Gro/Stimulates leaf production. Guaranteed to increase growth rate by at least 25%. Mix into tilled soil." #!String
     472: "Parsnip Seeds/10/-300/Seeds -74/Parsnip Seeds/Plant these in the spring. Takes 4 days to mature." #!String
-    473: "Bean Starter/30/-300/Seeds -74/Bean Starter/Plant these in the spring. Takes 10 days to mature, but keeps producing after that. Yields multiple beans per harvest. Grows on a trellis." #!String
+    473: "Bean Starter/30/-300/Seeds -74/Bean Starter/Plant these in the spring. Takes 10 days to mature, but keeps producing after that. Grows on a trellis." #!String
     474: "Cauliflower Seeds/40/-300/Seeds -74/Cauliflower Seeds/Plant these in the spring. Takes 12 days to produce a large cauliflower." #!String
     475: "Potato Seeds/25/-300/Seeds -74/Potato Seeds/Plant these in the spring. Takes 6 days to mature, and has a chance of yielding multiple potatoes at harvest." #!String
     476: "Garlic Seeds/20/-300/Seeds -74/Garlic Seeds/Plant these in the spring. Takes 4 days to mature." #!String
@@ -440,18 +457,18 @@ content:  #!Dictionary<Int32,String>
     576: "Slate/85/-300/Minerals -12/Slate/It's extremely resistant to water, making it a good roofing material." #!String
     577: "Fairy Stone/250/-300/Minerals -12/Fairy Stone/An old miner's song suggests these are made from the bones of ancient fairies." #!String
     578: "Star Shards/500/-300/Minerals -12/Star Shards/No one knows how these form. Some scientists claim that the microscopic structure displays unnatural regularity." #!String
-    579: "Prehistoric Scapula/100/-300/Arch/Prehistoric Scapula/Commonly known as a \"shoulder blade\"... It's unclear what species it belonged to./Item 1 289/Town .01" #!String
-    580: "Prehistoric Tibia/100/-300/Arch/Prehistoric Tibia/A thick and sturdy leg bone./Item 1 289/Forest .01" #!String
-    581: "Prehistoric Skull/100/-300/Arch/Prehistoric Skull/This is definitely a mammalian skull./Item 1 289/Mountain .01" #!String
-    582: "Skeletal Hand/100/-300/Arch/Skeletal Hand/It's a wonder all these ancient little pieces lasted so long./Item 1 289/Beach .01" #!String
-    583: "Prehistoric Rib/100/-300/Arch/Prehistoric Rib/Little gouge marks on the side suggest that this rib was someone's dinner./Item 1 289/Farm .01" #!String
-    584: "Prehistoric Vertebra/100/-300/Arch/Prehistoric Vertebra/A segment of some prehistoric creature's spine./Item 1 289/BusStop .01" #!String
-    585: "Skeletal Tail/100/-300/Arch/Skeletal Tail/It's pretty short for a tail./Item 1 289/UndergroundMine .01" #!String
-    586: "Nautilus Fossil/80/-300/Arch/Nautilus Fossil/This must've washed up ages ago from an ancient coral reef. /Item 1 289/Beach .03" #!String
-    587: "Amphibian Fossil/150/-300/Arch/Amphibian Fossil/The relatively short hind legs suggest some kind of primordial toad./Item 1 289/Forest .01 Mountain .01" #!String
-    588: "Palm Fossil/100/-300/Arch/Palm Fossil/Palm Fossils are relatively common, but this happens to be a particularly well-preserved specimen./Item 1 289/Desert .1 Beach .01 Forest .01" #!String
-    589: "Trilobite/50/-300/Arch/Trilobite/A long extinct relative of the crab./Item 1 289/Beach .03 Mountain .03 Forest .03" #!String
-    590: "Artifact Spot/0/-300/asdf/Artifact Spot/Uh... how did you get this in your inventory? Ape made a booboo./Item 1 289/Beach .03 Mountain .03 Forest .03" #!String
+    579: "Prehistoric Scapula/100/-300/Arch/Prehistoric Scapula/Commonly known as a \"shoulder blade\"... It's unclear what species it belonged to./Town .01" #!String
+    580: "Prehistoric Tibia/100/-300/Arch/Prehistoric Tibia/A thick and sturdy leg bone./Forest .01" #!String
+    581: "Prehistoric Skull/100/-300/Arch/Prehistoric Skull/This is definitely a mammalian skull./Mountain .01" #!String
+    582: "Skeletal Hand/100/-300/Arch/Skeletal Hand/It's a wonder all these ancient little pieces lasted so long./Beach .01" #!String
+    583: "Prehistoric Rib/100/-300/Arch/Prehistoric Rib/Little gouge marks on the side suggest that this rib was someone's dinner./Farm .01" #!String
+    584: "Prehistoric Vertebra/100/-300/Arch/Prehistoric Vertebra/A segment of some prehistoric creature's spine./BusStop .01" #!String
+    585: "Skeletal Tail/100/-300/Arch/Skeletal Tail/It's pretty short for a tail./UndergroundMine .01" #!String
+    586: "Nautilus Fossil/80/-300/Arch/Nautilus Fossil/This must've washed up ages ago from an ancient coral reef. /Beach .03" #!String
+    587: "Amphibian Fossil/150/-300/Arch/Amphibian Fossil/The relatively short hind legs suggest some kind of primordial toad./Forest .01 Mountain .01" #!String
+    588: "Palm Fossil/100/-300/Arch/Palm Fossil/Palm Fossils are relatively common, but this happens to be a particularly well-preserved specimen./Desert .1 Beach .01 Forest .01" #!String
+    589: "Trilobite/50/-300/Arch/Trilobite/A long extinct relative of the crab./Beach .03 Mountain .03 Forest .03" #!String
+    590: "Artifact Spot/0/-300/asdf/Artifact Spot/Uh... how did you get this in your inventory? Ape made a booboo./Beach .03 Mountain .03 Forest .03" #!String
     591: "Tulip/30/18/Basic -80/Tulip/The most popular spring flower. Has a very faint sweet smell." #!String
     593: "Summer Spangle/90/18/Basic -80/Summer Spangle/A tropical bloom that thrives in the humid summer air. Has a sweet, tangy aroma." #!String
     595: "Fairy Rose/290/18/Basic -80/Fairy Rose/An old folk legend suggests that the sweet smell of this flower attracts fairies." #!String
@@ -467,6 +484,7 @@ content:  #!Dictionary<Int32,String>
     611: "Blackberry Cobbler/260/70/Cooking -7/Blackberry Cobbler/There's nothing quite like it./food/0 0 0 0 0 0 0 0 0 0 0/0" #!String
     612: "Cranberry Candy/175/50/Cooking -7/Cranberry Candy/It's sweet enough to mask the bitter fruit./drink/0 0 0 0 0 0 0 0 0 0 0/0" #!String
     613: "Apple/100/15/Basic -79/Apple/A crisp fruit used for juice and cider." #!String
+    614: "Green Tea/100/5/Basic -26/Green Tea/A pleasant, energizing beverage made from lightly processed tea leaves./drink/0 0 0 0 0 0 0 30 0 0 0/360" #!String
     618: "Bruschetta/210/45/Cooking -7/Bruschetta/Roasted tomatoes on a crisp white bread./food/0 0 0 0 0 0 0 0 0 0 0/0" #!String
     621: "Quality Sprinkler/450/-300/Crafting -8/Quality Sprinkler/Waters the 8 adjacent tiles every morning." #!String
     628: "Cherry Sapling/850/-300/Basic -74/Cherry Sapling/Takes 28 days to produce a mature cherry tree. Bears fruit in the spring. Only grows if the 8 surrounding \"tiles\" are empty." #!String
@@ -538,6 +556,7 @@ content:  #!Dictionary<Int32,String>
     730: "Lobster Bisque/205/90/Cooking -7/Lobster Bisque/This delicate soup is a secret family recipe of Willy's./food/0 3 0 0 0 0 0 50 0 0 0/1440" #!String
     731: "Maple Bar/300/90/Cooking -7/Maple Bar/It's a sweet doughnut topped with a rich maple glaze./food/1 1 1 0 0 0 0 0 0 0 0/1440" #!String
     732: "Crab Cakes/275/90/Cooking -7/Crab Cakes/Crab, bread crumbs, and egg formed into patties then fried to a golden brown./food/0 0 0 0 0 0 0 0 0 1 1/1440" #!String
+    733: "Shrimp Cocktail/160/90/Cooking -7/Shrimp Cocktail/A sumptuous appetizer made with freshly-caught shrimp./food/0 1 0 0 1 0 0 0 0 0 0/860" #!String
     734: "Woodskip/75/10/Fish -4/Woodskip/A very sensitive fish that can only live in pools deep in the forest./Day^Spring Summer" #!String
     745: "Strawberry Seeds/0/-300/Seeds -74/Strawberry Seeds/Plant these in spring. Takes 8 days to mature, and keeps producing strawberries after that." #!String
     746: "Jack-O-Lantern/0/-300/Crafting -8/Jack-O-Lantern/A whimsical fall decoration." #!String
@@ -558,7 +577,7 @@ content:  #!Dictionary<Int32,String>
     771: "Fiber/1/-300/Basic -16/Fiber/Raw material sourced from plants." #!String
     772: "Oil of Garlic/1000/80/Cooking -7/Oil of Garlic/Drink this and weaker monsters will avoid you./drink/0 0 0 0 0 0 0 0 0 0 0/0" #!String
     773: "Life Elixir/500/80/Cooking -7/Life Elixir/Restores health to full./drink/0 0 0 0 0 0 0 0 0 0 0/0" #!String
-    774: "Wild Bait/15/-300/Basic -21/Wild Bait/A unique recipe from Linus. It appeals to all fish." #!String
+    774: "Wild Bait/15/-300/Basic -21/Wild Bait/A unique recipe from Linus that gives you a chance to catch two fish at once." #!String
     775: "Glacierfish/1000/10/Fish -4/Glacierfish/Builds a nest on the underside of glaciers./Day^Winter" #!String
     784: "Weeds/0/15/Basic/Weeds/Ugly weeds." #!String
     785: "Weeds/0/15/Basic/Weeds/Ugly weeds." #!String
@@ -572,4 +591,20 @@ content:  #!Dictionary<Int32,String>
     794: "Weeds/0/15/Basic/Weeds/Ugly weeds." #!String
     795: "Void Salmon/150/25/Fish -4/Void Salmon/A salmon, twisted by void energy. The fresh meat is jet black, but rapidly turns pink when exposed to air./Day^Spring Summer" #!String
     796: "Slimejack/100/15/Fish -4/Slimejack/He's coated in a very thick layer of slime. He keeps slipping out of your hands!/Day^Spring Summer" #!String
+    797: "Pearl/2500/-300/Basic/Pearl/A rare treasure from the sea." #!String
+    798: "Midnight Squid/100/15/Fish -4/Midnight Squid/A strange and mysterious denizen of the ocean's twilight depths./Day^Spring Summer" #!String
+    799: "Spook Fish/220/15/Fish -4/Spook Fish/The huge eyes can detect the faint silhouettes of prey./Day^Spring Summer" #!String
+    800: "Blobfish/500/15/Fish -4/Blobfish/This odd creature floats above the ocean floor, consuming any edible material in its path./Day^Spring Summer" #!String
+    801: "Wedding Ring/2000/-300/Ring/Wedding Ring/An old Zuzu City tradition... It's used to ask for another farmer's hand in marriage." #!String
+    802: "Cactus Seeds/0/-300/Seeds -74/Cactus Seeds/Can only be grown indoors. Takes 12 days to mature, and then produces fruit every 3 days." #!String
+    803: "Iridium Milk/0/-2/Basic/Iridium Milk/A powerful 'milk' of unknown origin.../drink/0 0 0 0 0 0 0 0 0 0 0/0" #!String
+    805: "Tree Fertilizer/10/-300/Basic -19/Tree Fertilizer/Sprinkle on a wild tree to ensure rapid growth, even in winter. Doesn't work on fruit trees." #!String
+    807: "Dinosaur Mayonnaise/800/-300/Basic -26/Dinosaur Mayonnaise/It's thick and creamy, with a vivid green hue. It smells like grass and leather." #!String
+    808: "Void Ghost Pendant/4500/-300/Basic/Void Ghost Pendant/It's symoblic to the shadow people. As a gift, it signifies the desire to move in together as friends." #!String
+    809: "Movie Ticket/500/-300/Basic/Movie Ticket/Admits one to the movie theater. Giving this to a friend invites them to the movies with you." #!String
+    810: "Crabshell Ring/2000/-300/Ring/Crabshell Ring/The top of the ring is made from enchanted crab shell." #!String
+    811: "Napalm Ring/2000/-300/Ring/Napalm Ring/When you defeat an enemy, they explode." #!String
+    812: "Roe/30/20/Basic -23/Roe/Fresh fish eggs. These can be aged in a preserves jar to bring out more flavor." #!String
+    814: "Squid Ink/110/-300/Basic -23/Squid Ink/Squid use this ink to confuse would-be predators." #!String
+    815: "Tea Leaves/50/-300/Basic -75/Tea Leaves/The young leaves of the tea plant. Can be brewed into the popular, energizing beverage." #!String
 

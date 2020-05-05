@@ -10,13 +10,19 @@ use App\Yaml;
 
 class Bundle
 {
-  public const kLangEnglish = 'en';
-  public const kLangSpanish = 'es-ES';
-  public const kLangGerman = 'de-DE';
-  public const kLangPortuguese = 'pt-BR';
-  public const kLangRussian = 'ru-RU';
-  public const kLangJapanese = 'ja-JP';
-  public const kLangChinese = 'zh-CN';
+  const kLangEnglish = 'en';
+  const kLangSpanish = 'es-ES';
+  const kLangGerman = 'de-DE';
+  const kLangPortuguese = 'pt-BR';
+  const kLangRussian = 'ru-RU';
+  const kLangJapanese = 'ja-JP';
+  const kLangChinese = 'zh-CN';
+  const kLangItalian = 'it-IT';
+  const kLangFrench = 'fr-FR';
+  const kLangKorean = 'ko-KR';
+  const kLangTurkish = 'tr-TR';
+  const kLangHungarian = 'hu-HU';
+   
 
   public $uid;
   public $raw;
@@ -67,9 +73,19 @@ class Bundle
 
   public static function langs()
   {
-    return [self::kLangEnglish, self::kLangSpanish, self::kLangGerman, 
-            self::kLangPortuguese, self::kLangRussian, self::kLangJapanese,
-            self::kLangChinese];
+    return [
+		self::kLangEnglish, 
+		self::kLangSpanish, 
+		self::kLangGerman, 
+        self::kLangPortuguese, 
+		self::kLangRussian, 
+		self::kLangJapanese,
+        self::kLangChinese, 
+		self::kLangItalian,
+		self::kLangFrench,
+		self::kLangKorean, 
+		self::kLangTurkish, 
+		self::kLangHungarian];
   }
 
   public static function identifiers()
@@ -104,7 +120,8 @@ class Bundle
       32 => 'Bulletin Board/32',
       33 => 'Bulletin Board/33',
       34 => 'Bulletin Board/34',
-      35 => 'Bulletin Board/35'
+      35 => 'Bulletin Board/35',
+	  36 => 'Abandoned Joja Mart/36'
     ];
   }
 

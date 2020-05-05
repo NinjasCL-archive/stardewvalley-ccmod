@@ -15,17 +15,17 @@ class Item
     public $category;
     public $prizeType;
 
-    public const kCategoryObject = 'Object';
-    public const kCategoryFurniture = 'Furniture';
-    public const kCategoryBigCraftable = 'BigCraftable';
-    public const kCategoryRing = 'Ring';
-    public const kCategoryChair = 'Chair';
-
-    public const kTypeObject = 'O';
-    public const kTypeBigCraftable = 'BO';
-    public const kTypeFurniture = 'F';
-    public const kTypeRing = 'R';
-    public const kTypeChair = 'C';
+    const kCategoryObject = 'Object';
+    const kCategoryFurniture = 'Furniture';
+    const kCategoryBigCraftable = 'BigCraftable';
+    const kCategoryRing = 'Ring';
+    const kCategoryChair = 'Chair';
+    
+    const kTypeObject = 'O';
+    const kTypeBigCraftable = 'BO';
+    const kTypeFurniture = 'F';
+    const kTypeRing = 'R';
+    const kTypeChair = 'C';
 
     private static $items;
     private static $objects;

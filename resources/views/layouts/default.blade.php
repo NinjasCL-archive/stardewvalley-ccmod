@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Community Center Modifier - Ninjas.cl</title>
   <link rel="stylesheet" type="text/css" href="{{asset('bower_components/bulma/css/bulma.css')}}">
+  <link rel="shortcut icon" href="favicon.png" />
   <script src="{{asset('bower_components/jquery/dist/jquery.min.js')}}"></script>
   
   @yield('scripts')
@@ -43,7 +44,7 @@
             <h1 class="title is-2">{{__('Community Center Modifier')}}</h1>
           </a>          
           <p>{{__('Create your Own Community Center Arc!')}}</p>
-          <p><strong>{{__('For')}} Stardew Valley 1.2</strong></p>
+          <p><strong>{{__('For')}} Stardew Valley 1.4</strong></p>
         </div>
         <div class="tile is-child"></div>
       </div>

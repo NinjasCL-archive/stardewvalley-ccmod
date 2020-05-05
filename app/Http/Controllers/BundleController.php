@@ -9,9 +9,25 @@ use App\Bundle;
 use App\Item;
 use App\Quality;
 use App\Download;
+use App\XNBNode;
 
 class BundleController extends Controller
 {
+	
+	private function download($file, $name)
+	{
+		try
+		{
+			return Download::file($file, $name);
+		} 
+		catch(\Exception $e)
+		{
+			error_log($e->getMessage());
+		}
+		
+		dd("No download found");
+	}
+	
     public function index(Request $request)
     {
       $this->validate($request, [
@@ -45,6 +61,7 @@ class BundleController extends Controller
         'qualities' => $qualities
         ]);
     }
+	
 
     public function create(Request $request)
     {
@@ -61,9 +78,6 @@ class BundleController extends Controller
       ]);
 
       $bundles = json_decode($request->input('bundles'));
-      $lang = trim($request->input('lang'));
-      
-      $filename = Bundle::getFileNameByLang($lang, 'yml');
 
       $params = [
         'bundles' => $bundles,
@@ -96,10 +110,15 @@ class BundleController extends Controller
         'field' => $bundles[26],
         'enchanter' => $bundles[27],
         'dye' => $bundles[28],
-        'fodder' => $bundles[29]
+        'fodder' => $bundles[29],
+		'joja' => $bundles[30]
       ];
 
       $view = 'bundle.yaml';
+	  
+	  $lang = trim($request->input('lang'));
+      $filename = Bundle::getFileNameByLang($lang, 'yml');
+	  
       if($lang === Bundle::kLangEnglish)
       {
         $view .= '-eng';
@@ -112,7 +131,28 @@ class BundleController extends Controller
       fwrite($file, $yaml);
       fclose($file);
 
-      return Download::file($filepath, $filename);
+	  // Only YAML
+	  $xnb = trim($request->input('xnb'));
+	  if(empty($xnb)) 
+	  { 
+		return self::download($filepath, $filename);
+	  }
+	  
+	  // Compile XNB
+	  $xnbfile = XNBNode::build($filepath);
+	  
+	  // Something went wrong, just return the YAML
+	  if(is_null($xnbfile))
+	  {
+		  error_log("XNB file not found for Download");
+		  return self::download($filepath, $filename);
+	  }
+	  
+	  // Remove cached Yaml
+	  unlink($filepath);
+	  
+	  $filename = Bundle::getFileNameByLang($lang, 'xnb');
+	  return self::download($xnbfile, $filename);
     }
 
 }
