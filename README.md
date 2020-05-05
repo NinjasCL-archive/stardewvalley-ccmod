@@ -55,6 +55,10 @@ Maybe you want to create a new community center using previous custom files. Or 
 Because the script generates a heavy webpage (50mb) it will took a little while
 to load successfully.
 
+## Alternatives
+
+You can use [https://www.nexusmods.com/stardewvalley/mods/1915](Content Patcher).
+
 ## License
 
 MIT.
