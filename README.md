@@ -43,12 +43,12 @@ https://github.com/NinjasCL/stardewvalley-ccmod/releases
 1. Select your Bundle's Language.
 2. Change your desired settings.
 3. Download the XNB file. (You can also download the _yaml_ file for keeping custom versions editable.)
-4. Copy `Bundles.xnb` (or `Bundles.es-ES`, depending on your selected language) replacing the file in `Data/Bundles.xnb` (depens on the language) inside the _StarDew Valley files directory_ (Backup your files).
+4. Copy `Bundles.xnb` (or `Bundles.es-ES`, depending on your selected language) replacing the file in `Data/Bundles.xnb` (depends on the language) inside the _StarDew Valley files directory_ (Backup your files).
 5. That's it!.
 
 ## How to Extend
 
-Maybe you want to create a new community center using previous custom files. Or you want custom _Object Information_. You just need to replace the [https://yaml.org/](yaml) files inside `www/resources/yaml`.
+Maybe you want to create a new community center using previous custom files. Or you want custom _Object Information_. You just need to replace the [Yaml](https://yaml.org/) files inside `www/resources/yaml`.
 
 ## Note
 
@@ -57,7 +57,7 @@ to load successfully.
 
 ## Alternatives
 
-You can use [https://www.nexusmods.com/stardewvalley/mods/1915](Content Patcher).
+You can use [Content Patcher](https://www.nexusmods.com/stardewvalley/mods/1915).
 
 ## License
 
