@@ -2,4 +2,7 @@
 *.css linguist-vendored
 *.scss linguist-vendored
 *.js linguist-vendored
+*.bat eol=crlf
+*.cmd eol=crlf
+*.xsd eol=crlf
 CHANGELOG.md export-ignore
